@@ -6,6 +6,7 @@ function SearchHeader({ search }) {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     search(valueInput);
+    setValueInput((event.target[0].value = ""));
   };
 
   const handleChange = (event) => {
@@ -17,7 +18,7 @@ function SearchHeader({ search }) {
       <div className="row">
         <div className="col-12 my-3">
           <form className="formWrapper" onSubmit={handleFormSubmit}>
-            <label className="mb-3">What are you looking for?</label>
+            <label className="mb-3 text-white">What are you looking for?</label>
             <input
               className="form-control"
               placeholder="Placeholder"
