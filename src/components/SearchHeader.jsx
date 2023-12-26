@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./SearchHeader.css";
+import "../../src/SearchHeader.css";
 
 function SearchHeader({ search }) {
   const [valueInput, setValueInput] = useState("");
